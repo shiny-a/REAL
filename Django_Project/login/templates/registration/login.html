@@ -1,0 +1,8 @@
+{% extends 'base_centered.html' %}
+
+{% block content %}
+  <h2>ログイン</h2>
+  <a class="btn btn-outline-light btn-sm"  href="{% url 'real:base' %}">ログイン</a>
+  <a class="btn btn-outline-light btn-sm"  href="{% url 'login:signup' %}">アカウント作成</a>
+  <a href="{% url 'login:password_reset_form' %}">パスワードをお忘れの方</a>
+{% endblock %}
